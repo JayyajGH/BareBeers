@@ -1,5 +1,5 @@
 <template>
-  <a v-if="beer" href="/DetailsView" class="beer">
+  <NuxtLink v-if="beer" to="/DetailsView" class="beer">
     <article itemscope itemtype="https://schema.org/Product">
       <img class="beer__image" :src="beer.image.url" alt="" itemprop="image">
       <div class="beer-details">
@@ -9,7 +9,7 @@
         <button class="button button--primary">Buy</button>
       </div>
     </article>
-  </a>
+  </NuxtLink>
 </template>
 
 <script>
