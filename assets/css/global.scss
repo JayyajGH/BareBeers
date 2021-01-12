@@ -1,0 +1,81 @@
+@import 'typography';
+@import 'buttons';
+
+:root {
+  font-size: 100%;
+
+  --white: #FFF;
+  --black: #000;
+
+  --grey-light: #D3D3D3;
+  --grey-base: #70686b;
+  --grey-dark: #3E3E3E;
+
+  --orange-base: #A46313;
+  --orange-dark: #8D5511;
+
+  --red: #ff0000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Make all elements from the DOM inherit from the parent box-sizing
+   Since `*` has a specificity of 0, it does not override the `html` value
+   making all elements inheriting from the root box-sizing value
+   See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 50em) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* NB: This will be hidden from view but still be available to screenreaders
+ http://webaim.org/techniques/css/invisiblecontent/ */
+.u-hidden-visually {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+}
+
+/* Padding */
+.u-padding--small {
+  padding: 0.5rem !important;
+}
+
+.u-padding--medium {
+  padding: 1rem !important;
+}
+
+.u-padding--large {
+  padding: 2rem !important;
+}
+
+/* Margins */
+.u-margin-bottom--small {
+  margin-bottom: 0.5rem !important;
+}
+
+.u-margin-bottom--medium {
+  margin-bottom: 1rem !important;
+}
+
+.u-margin-bottom--large {
+  margin-bottom: 2rem !important;
+}

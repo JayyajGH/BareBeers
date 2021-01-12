@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  width: 150px;
+}
+
+.button--primary {
+  background-color: var(--orange-base);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--orange-dark);
+  }
+}
+
+.button--secondary {
+  background-color: var(--orange-base);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--orange-dark);
+  }
+}
