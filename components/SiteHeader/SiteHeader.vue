@@ -32,9 +32,13 @@
 }
 
 .logo {
-  width: 90px;
+  width: 60px;
   border-radius: 3px;
   background-color: var(--white);
+
+  @media (min-width: 50em) {
+    width: 90px;
+  }
 }
 
 .site-nav__menu {
@@ -55,12 +59,12 @@
   transition: 0.3s;
   text-decoration: none;
   color: var(--grey-base);
-}
 
-.site-nav__link:hover {
-  color: var(--black);
-  border-top: 2px solid var(--black);
-  padding-top: 2px;
+  &:hover {
+    color: var(--black);
+    border-top: 2px solid var(--black);
+    padding-top: 2px;
+  }
 }
 
 .skip__link:focus {

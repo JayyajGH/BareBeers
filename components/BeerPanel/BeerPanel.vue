@@ -37,11 +37,11 @@ export default {
   flex-direction: column;
   padding: 10px;
   transition: all 0.5s;
-}
 
-.beer:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.01);
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);
+  }
 }
 
 .beer__name {
@@ -58,11 +58,7 @@ export default {
 }
 
 .beer__image {
-  width: 20%;
-
-  @media (min-width: 50em) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .beer-details__price {
