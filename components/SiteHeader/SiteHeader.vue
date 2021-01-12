@@ -85,12 +85,12 @@
   background-image: url('~assets/images/masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
   min-height: 250px;
 
   @media (min-width: 93.75em) {
     background-image: url('~assets/images/masthead-large.jpg');
     min-height: 450px;
+    background-position-y: 10%;
   }
 }
 </style>
